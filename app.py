@@ -53,19 +53,21 @@ def predict_tflite(interpreter, input_data, plant_type):
 
 def get_labels(plant_type):
     if plant_type == "Potato":
+        # ✅ URUTAN SESUAI MODEL:
+        # Class 0 = Healthy, Class 1 = Late Blight, Class 2 = Early Blight
         return ["Healthy", "Late Blight", "Early Blight"]
     elif plant_type == "Tomato":
         return [
-            "Leaf Mold",  # 0
-            "Yellow Leaf Curl Virus",  # 1
-            "Bacterial Spot",  # 2
-            "Septoria Leaf Spot",  # 3
-            "Healthy",  # 4
-            "Spider Mites",  # 5
-            "Early Blight",  # 6
-            "Target Spot",  # 7
-            "Late Blight",  # 8
-            "Tomato Mosaic Virus"  # 9
+            "Leaf Mold",                 # 0
+            "Yellow Leaf Curl Virus",   # 1
+            "Bacterial Spot",           # 2
+            "Septoria Leaf Spot",       # 3
+            "Healthy",                  # 4
+            "Spider Mites",             # 5
+            "Early Blight",             # 6
+            "Target Spot",              # 7
+            "Late Blight",              # 8
+            "Tomato Mosaic Virus"       # 9
         ]
     elif plant_type == "Pepper":
         return ["Healthy", "Bacterial Spot"]
