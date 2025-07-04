@@ -127,9 +127,6 @@ if image:
 
             st.success(f"✅ **Prediction Result:** {pred_label}")
             st.markdown(f"🧠 *The model is {confidence:.2%} confident this leaf shows signs of* **{pred_label}**.")
-            st.write("🔢 Raw model output:", prediction)
-            st.write("🏷 Index Predicted:", max_index)
-            st.write("📌 Interpreted Label:", labels[max_index])
 
             st.markdown("#### 📊 Class Probabilities:")
             for label, prob in zip(labels, prediction):
