@@ -68,7 +68,7 @@ def get_labels(plant_type):
             "Tomato Mosaic Virus"  # 9
         ]
     elif plant_type == "Pepper":
-        return ["Bacterial Spot", "Healthy"]
+        return ["Healthy", "Bacterial Spot"]
 
 # --------------------------
 # Streamlit UI
