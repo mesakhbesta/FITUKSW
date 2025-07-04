@@ -55,7 +55,7 @@ def get_labels(plant_type):
     if plant_type == "Potato":
         # ✅ URUTAN SESUAI MODEL:
         # Class 0 = Healthy, Class 1 = Late Blight, Class 2 = Early Blight
-        return ["Healthy", "Late Blight", "Early Blight"]
+        return ["Early Blight","Late Blight","Healthy"]
     elif plant_type == "Tomato":
         return [
             "Leaf Mold",                 # 0
